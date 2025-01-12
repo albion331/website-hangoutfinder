@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HangOut Finder - Temukan Tempat Nongkrong Favoritmu</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="HangOut Finder Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="rekomendasi.html">Kategori</a></li>
+                <li><a href="filter.html">Filter</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+        <!-- Audio Controls -->
+        <div class="audio-controls">
+            <button class="btn-music" title="Toggle Background Music">
+                <i class="fas fa-music"></i>
+            </button>
+        </div>
+    
+        <!-- Audio Elements -->
+        <div class="audio-elements">
+            <audio id="bgMusic" loop>
+                <source src="assets/audio/bgm.mp3" type="audio/mp3">
+            </audio>
+            <audio id="notificationSound">
+                <source src="assets/audio/notifikasi.mp3" type="audio/mp3">
+            </audio>
+            <audio id="welcomeSound">
+                <source src="assets/audio/welcome.mp3" type="audio/mp3">
+            </audio>
+            <audio id="openSound">
+                <source src="assets/audio/open.mp3" type="audio/mp3">
+            </audio>
+            <audio id="closeSound">
+                <source src="assets/audio/close.mp3" type="audio/mp3">
+            </audio>
+            <audio id="messageSound">
+                <source src="assets/audio/message.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    
+        <!-- Scripts -->
+        <script src="assets/js/script.js"></script>
+        <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+    
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="search-container">
+            <h1>Temukan Tempat Nongkrong Favoritmu</h1>
+            <form class="search-box">
+                <input type="text" 
+                       class="search-input" 
+                       placeholder="Cari berdasarkan nama, kategori, atau fasilitas..."
+                       required>
+                <button type="submit" class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Kategori Section -->
+    <section class="kategori-section">
+        <h2>Pilih Kategori</h2>
+        <div class="kategori-container">
+            <a href="rekomendasi.html?kategori=kafe" class="kategori-item">
+                <img src="assets/images/icons/cafe-icon.png" alt="Kafe">
+                <h3>Kafe</h3>
+                <p>Tempat nyaman untuk nongkrong dan menikmati kopi</p>
+            </a>
+
+            <a href="rekomendasi.html?kategori=coworking" class="kategori-item">
+                <img src="assets/images/icons/coworking-icon.png" alt="Coworking Space">
+                <h3>Coworking Space</h3>
+                <p>Ruang kerja bersama yang produktif</p>
+            </a>
+
+            <a href="rekomendasi.html?kategori=outdoor" class="kategori-item">
+                <img src="assets/images/icons/outdoor-icon.png" alt="Outdoor">
+                <h3>Outdoor</h3>
+                <p>Tempat santai dengan suasana alam terbuka</p>
+            </a>
+
+            <a href="rekomendasi.html?kategori=taman" class="kategori-item">
+                <img src="assets/images/icons/park-icon.png" alt="Taman">
+                <h3>Taman</h3>
+                <p>Ruang publik untuk bersantai dan rekreasi</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Rekomendasi Populer -->
+    <section class="rekomendasi-section">
+        <h2>Rekomendasi Populer</h2>
+        <div class="rekomendasi-slider">
+            <!-- Item Rekomendasi akan di-generate menggunakan JavaScript -->
+        </div>
+    </section>
+
+    <!-- Virtual Agent -->
+    <div class="virtual-agent">
+        <div class="agent-icon">
+            <img src="assets/images/agent-icon.png" alt="Virtual Assistant">
+        </div>
+        <div class="agent-chat">
+            <p>Hai! Saya dapat membantu menemukan tempat nongkrong ideal untukmu.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h4>Tautan Cepat</h4>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="rekomendasi.html">Kategori</a></li>
+                    <li><a href="filter.html">Filter</a></li>
+                    <li><a href="tentang.html">Tentang Kami</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <h4>Ikuti Kami</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 HangOut Finder. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/agent.js"></script>
+    <!-- Font Awesome untuk ikon -->
+    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - HangOut Finder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="HangOut Finder Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="rekomendasi.html">Kategori</a></li>
+                <li><a href="filter.html">Filter</a></li>
+                <li><a href="tentang.html" class="active">Tentang Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+        <!-- Audio Controls -->
+        <div class="audio-controls">
+            <button class="btn-music" title="Toggle Background Music">
+                <i class="fas fa-music"></i>
+            </button>
+        </div>
+    
+        <!-- Audio Elements -->
+        <div class="audio-elements">
+            <audio id="bgMusic" loop>
+                <source src="assets/audio/bgm.mp3" type="audio/mp3">
+            </audio>
+            <audio id="notificationSound">
+                <source src="assets/audio/notifikasi.mp3" type="audio/mp3">
+            </audio>
+            <audio id="welcomeSound">
+                <source src="assets/audio/welcome.mp3" type="audio/mp3">
+            </audio>
+            <audio id="openSound">
+                <source src="assets/audio/open.mp3" type="audio/mp3">
+            </audio>
+            <audio id="closeSound">
+                <source src="assets/audio/close.mp3" type="audio/mp3">
+            </audio>
+            <audio id="messageSound">
+                <source src="assets/audio/message.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    
+        <!-- Scripts -->
+        <script src="assets/js/script.js"></script>
+        <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+
+    <!-- Tentang Section -->
+    <section class="tentang-section">
+        <div class="tentang-container">
+            <h1>Tentang HangOut Finder</h1>
+            <div class="tentang-content">
+                <div class="tentang-text">
+                    <p>HangOut Finder adalah platform yang membantu Anda menemukan tempat nongkrong ideal sesuai dengan preferensi dan kebutuhan Anda. Dengan bantuan HAFI (HangOut Finder Assistant), kami memudahkan pencarian tempat nongkrong dari kafe hingga coworking space.</p>
+                    <div class="fitur-list">
+                        <h3>Fitur Utama:</h3>
+                        <ul>
+                            <li>Pencarian tempat berdasarkan kategori</li>
+                            <li>Filter berdasarkan fasilitas dan budget</li>
+                            <li>Rekomendasi tempat terpersonalisasi</li>
+                            <li>Asisten virtual HAFI yang siap membantu</li>
+                            <li>Informasi lengkap setiap tempat</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bantuan-section">
+                <h2>Panduan Penggunaan</h2>
+                <div class="panduan-container">
+                    <div class="panduan-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Pilih Kategori</h3>
+                            <p>Pilih kategori tempat yang Anda inginkan: Kafe, Taman, Coworking Space, atau gunakan filter khusus seperti WiFi dan Outdoor.</p>
+                        </div>
+                    </div>
+
+                    <div class="panduan-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Gunakan Filter</h3>
+                            <p>Tentukan preferensi Anda dengan filter: rentang harga, fasilitas yang dibutuhkan, atau suasana yang diinginkan.</p>
+                        </div>
+                    </div>
+
+                    <div class="panduan-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Tanya HAFI</h3>
+                            <p>Gunakan asisten virtual HAFI untuk rekomendasi personal. Klik ikon HAFI di pojok kanan bawah dan ajukan pertanyaan Anda.</p>
+                        </div>
+                    </div>
+
+                    <div class="panduan-item">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Lihat Detail</h3>
+                            <p>Klik tombol "Lihat Detail" untuk informasi lengkap tentang tempat yang Anda minati: foto, review, fasilitas, dan jam operasional.</p>
+                        </div>
+                    </div>
+
+                    <div class="panduan-item">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Temukan Lokasi</h3>
+                            <p>Gunakan tombol Maps untuk melihat lokasi dan rute menuju tempat yang Anda pilih.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bantuan-buttons">
+                    <a href="#" class="btn-bantuan">
+                        <i class="fas fa-book"></i>
+                        Panduan Lengkap
+                    </a>
+                    <a href="#" class="btn-bantuan">
+                        <i class="fas fa-question-circle"></i>
+                        FAQ
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tim Section -->
+            <div class="tim-section">
+                <h2>Pembuat</h2>
+                <div class="tim-member">
+                    <div class="member-image">
+                        <label for="upload-photo" class="upload-label">
+                            <img src="assets/images/tim/member1.jpg" alt="M.RADHITIA" id="profile-image">
+                            <div class="upload-overlay">
+                                <i class="fas fa-camera"></i>
+                                <span>Ubah Foto</span>
+                            </div>
+                        </label>
+                        <input type="file" id="upload-photo" accept="image/*" style="display: none;">
+                    </div>
+                    <div class="member-info">
+                        <h3>M.RADHITIA</h3>
+                        <p class="member-role">Mahasiswa Teknik Informatika</p>
+                        <p class="member-bp">BP: 23101152630104</p>
+                        <div class="member-social">
+                            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h4>Tautan Cepat</h4>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="rekomendasi.html">Kategori</a></li>
+                    <li><a href="filter.html">Filter</a></li>
+                    <li><a href="tentang.html">Tentang Kami</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <h4>Ikuti Kami</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 HangOut Finder. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+</body>
+</html> 

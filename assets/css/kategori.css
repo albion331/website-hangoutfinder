@@ -1,0 +1,169 @@
+/* Quick Filter Styles */
+.quick-filter {
+    margin-top: 80px;
+    padding: 2rem 5%;
+    background: var(--white);
+    box-shadow: var(--shadow);
+}
+
+.filter-tags {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    padding: 0.5rem 1.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 25px;
+    background: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.tag:hover, .tag.active {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+/* Rekomendasi List Styles */
+.rekomendasi-list {
+    padding: 3rem 5%;
+}
+
+.rekomendasi-list h2 {
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.tempat-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.tempat-item {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.tempat-item:hover {
+    transform: translateY(-5px);
+}
+
+.tempat-image {
+    position: relative;
+    height: 200px;
+}
+
+.tempat-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kategori-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.tempat-info {
+    padding: 1.5rem;
+}
+
+.tempat-info h3 {
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.rating {
+    color: #FFB800;
+    font-weight: 500;
+}
+
+.harga {
+    color: var(--text-light);
+    margin: 0.5rem 0;
+}
+
+.fasilitas-icons {
+    display: flex;
+    gap: 0.8rem;
+    margin: 1rem 0;
+}
+
+.fasilitas-icons span {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(74, 139, 92, 0.1);
+    border-radius: 50%;
+    color: var(--primary-color);
+}
+
+.tempat-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn-detail {
+    flex: 1;
+    text-align: center;
+    padding: 0.8rem;
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: 25px;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.btn-maps {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    background: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-detail:hover {
+    background: var(--accent-color);
+}
+
+.btn-maps:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .quick-filter {
+        margin-top: 60px;
+        padding: 1rem;
+    }
+
+    .filter-tags {
+        justify-content: center;
+    }
+
+    .tempat-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+} 

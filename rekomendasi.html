@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekomendasi Tempat - HangOut Finder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/filter.css">
+    <link rel="stylesheet" href="assets/css/kategori.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="HangOut Finder Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="rekomendasi.html" class="active">Kategori</a></li>
+                <li><a href="filter.html">Filter</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+        <!-- Audio Controls -->
+        <div class="audio-controls">
+            <button class="btn-music" title="Toggle Background Music">
+                <i class="fas fa-music"></i>
+            </button>
+        </div>
+    
+        <!-- Audio Elements -->
+        <div class="audio-elements">
+            <audio id="bgMusic" loop>
+                <source src="assets/audio/bgm.mp3" type="audio/mp3">
+            </audio>
+            <audio id="notificationSound">
+                <source src="assets/audio/notifikasi.mp3" type="audio/mp3">
+            </audio>
+            <audio id="welcomeSound">
+                <source src="assets/audio/welcome.mp3" type="audio/mp3">
+            </audio>
+            <audio id="openSound">
+                <source src="assets/audio/open.mp3" type="audio/mp3">
+            </audio>
+            <audio id="closeSound">
+                <source src="assets/audio/close.mp3" type="audio/mp3">
+            </audio>
+            <audio id="messageSound">
+                <source src="assets/audio/message.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    
+        <!-- Scripts -->
+        <script src="assets/js/data.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/agent.js"></script>
+        <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+        
+    <!-- Filter Quick Access -->
+    <section class="quick-filter">
+        <div class="filter-tags">
+            <button class="tag active">Semua</button>
+            <button class="tag">Kafe</button>
+            <button class="tag">Taman</button>
+            <button class="tag">Coworking Space</button>
+            <button class="tag">WiFi</button>
+            <button class="tag">Outdoor</button>
+        </div>
+    </section>
+
+    <!-- Hasil Rekomendasi -->
+    <section class="rekomendasi-list">
+        <h2>Rekomendasi Tempat</h2>
+        <div class="tempat-container">
+            <!-- Kafe 2 -->
+            <div class="tempat-item">
+                <div class="tempat-image">
+                    <img src="assets/images/tempat/kafe2.jpg" alt="Ruang Temu Coffee">
+                    <span class="kategori-badge">Kafe</span>
+                </div>
+                <div class="tempat-info">
+                    <h3>Ruang Temu Coffee</h3>
+                    <div class="rating">⭐⭐⭐⭐ 4.5</div>
+                    <div class="harga">💰 Rp40.000 - Rp80.000</div>
+                    <div class="fasilitas-icons">
+                        <span title="WiFi"><i class="fas fa-wifi"></i></span>
+                        <span title="Colokan Listrik"><i class="fas fa-plug"></i></span>
+                        <span title="Smoking Area"><i class="fas fa-smoking"></i></span>
+                    </div>
+                    <div class="tempat-actions">
+                        <a href="detail.html?id=kafe2" class="btn-detail">Lihat Detail</a>
+                        <button class="btn-maps"><i class="fas fa-map-marker-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coworking Space -->
+            <div class="tempat-item">
+                <div class="tempat-image">
+                    <img src="assets/images/tempat/coworking1.jpg" alt="WorkHub Space">
+                    <span class="kategori-badge">Coworking Space</span>
+                </div>
+                <div class="tempat-info">
+                    <h3>WorkHub Space</h3>
+                    <div class="rating">⭐⭐⭐⭐ 4.8</div>
+                    <div class="harga">💰 Rp50.000 - Rp150.000</div>
+                    <div class="fasilitas-icons">
+                        <span title="WiFi Cepat"><i class="fas fa-wifi"></i></span>
+                        <span title="Power Outlet"><i class="fas fa-plug"></i></span>
+                        <span title="Meeting Room"><i class="fas fa-users"></i></span>
+                    </div>
+                    <div class="tempat-actions">
+                        <a href="detail.html?id=coworking1" class="btn-detail">Lihat Detail</a>
+                        <button class="btn-maps"><i class="fas fa-map-marker-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Taman -->
+            <div class="tempat-item">
+                <div class="tempat-image">
+                    <img src="assets/images/tempat/taman1.jpg" alt="Taman Kota Hijau">
+                    <span class="kategori-badge">Taman</span>
+                </div>
+                <div class="tempat-info">
+                    <h3>Taman Kota Hijau</h3>
+                    <div class="rating">⭐⭐⭐⭐ 4.6</div>
+                    <div class="harga">💰 Gratis</div>
+                    <div class="fasilitas-icons">
+                        <span title="Parkir"><i class="fas fa-parking"></i></span>
+                        <span title="Jogging Track"><i class="fas fa-running"></i></span>
+                        <span title="Playground"><i class="fas fa-child"></i></span>
+                    </div>
+                    <div class="tempat-actions">
+                        <a href="detail.html?id=taman1" class="btn-detail">Lihat Detail</a>
+                        <button class="btn-maps"><i class="fas fa-map-marker-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COWORKING SPACES -->
+            <!-- Coworking 2 -->
+            <div class="tempat-item">
+                <div class="tempat-image">
+                    <img src="assets/images/tempat/coworking2.jpg" alt="Creative Station">
+                    <span class="kategori-badge">Coworking</span>
+                </div>
+                <div class="tempat-info">
+                    <h3>Creative Station</h3>
+                    <div class="rating">⭐⭐⭐⭐ 4.7</div>
+                    <div class="harga">💰 Rp80.000 - Rp150.000</div>
+                    <div class="fasilitas-icons">
+                        <span title="WiFi"><i class="fas fa-wifi"></i></span>
+                        <span title="Cafe"><i class="fas fa-coffee"></i></span>
+                        <span title="Loker"><i class="fas fa-lock"></i></span>
+                    </div>
+                    <div class="tempat-actions">
+                        <a href="detail.html" class="btn-detail">Lihat Detail</a>
+                        <button class="btn-maps"><i class="fas fa-map-marker-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coworking 3 -->
+            <div class="tempat-item">
+                <div class="tempat-image">
+                    <img src="assets/images/tempat/coworking3.jpg" alt="Business Center">
+                    <span class="kategori-badge">Coworking</span>
+                </div>
+                <div class="tempat-info">
+                    <h3>Business Center</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐ 4.9</div>
+                    <div class="harga">💰 Rp150.000 - Rp300.000</div>
+                    <div class="fasilitas-icons">
+                        <span title="WiFi"><i class="fas fa-wifi"></i></span>
+                        <span title="Meeting Room"><i class="fas fa-users"></i></span>
+                        <span title="Receptionist"><i class="fas fa-concierge-bell"></i></span>
+                    </div>
+                    <div class="tempat-actions">
+                        <a href="detail.html" class="btn-detail">Lihat Detail</a>
+                        <button class="btn-maps"><i class="fas fa-map-marker-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coworking 4 -->
+            <div class="tempat-item">
+                <div class="tempat-image">
+                    <img src="assets/images/tempat/coworking4.jpg" alt="Startup Valley">
+                    <span class="kategori-badge">Coworking</span>
+                </div>
+                <div class="tempat-info">
+                    <h3>Startup Valley</h3>
+                    <div class="rating">⭐⭐⭐⭐ 4.6</div>
+                    <div class="harga">💰 Rp75.000 - Rp150.000</div>
+                    <div class="fasilitas-icons">
+                        <span title="WiFi"><i class="fas fa-wifi"></i></span>
+                        <span title="Game Room"><i class="fas fa-gamepad"></i></span>
+                        <span title="Cafe"><i class="fas fa-coffee"></i></span>
+                    </div>
+                    <div class="tempat-actions">
+                        <a href="detail.html" class="btn-detail">Lihat Detail</a>
+                        <button class="btn-maps"><i class="fas fa-map-marker-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coworking 5 -->
+            <div class="tempat-item">
+                <div class="tempat-image">
+                    <img src="assets/images/tempat/coworking5.jpg" alt="The Office">
+                    <span class="kategori-badge">Coworking</span>
+                </div>
+                <div class="tempat-info">
+                    <h3>The Office</h3>
+                    <div class="rating">⭐⭐⭐⭐ 4.5</div>
+                    <div class="harga">💰 Rp90.000 - Rp180.000</div>
+                    <div class="fasilitas-icons">
+                        <span title="WiFi"><i class="fas fa-wifi"></i></span>
+                        <span title="Phone Booth"><i class="fas fa-phone"></i></span>
+                        <span title="Pantry"><i class="fas fa-utensils"></i></span>
+                    </div>
+                    <div class="tempat-actions">
+                        <a href="detail.html" class="btn-detail">Lihat Detail</a>
+                        <button class="btn-maps"><i class="fas fa-map-marker-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OUTDOOR SPACES -->
+            <!-- Outdoor 1 -->
+            <div class="tempat-item">
+                <div class="tempat-image">
+                    <img src="assets/images/tempat/outdoor1.jpg" alt="Rooftop Garden">
+                    <span class="kategori-badge">Outdoor</span>
+                </div>
+                <div class="tempat-info">
+                    <h3>Rooftop Garden</h3>
+                    <div class="rating">⭐⭐⭐⭐ 4.7</div>
+                    <div class="harga">💰 Rp50.000 - Rp100.000</div>
+                    <div class="fasilitas-icons">
+                        <span title="Outdoor"><i class="fas fa-tree"></i></span>
+                        <span title="WiFi"><i class="fas fa-wifi"></i></span>
+                        <span title="Bar"><i class="fas fa-glass-martini-alt"></i></span>
+                    </div>
+                    <div class="tempat-actions">
+                        <a href="detail.html" class="btn-detail">Lihat Detail</a>
+                        <button class="btn-maps"><i class="fas fa-map-marker-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Outdoor 2 -->
+            <div class="tempat-item">
+                <div class="tempat-image">
+                    <img src="assets/images/tempat/outdoor2.jpg" alt="Riverside Cafe">
+                    <span class="kategori-badge">Outdoor</span>
+                </div>
+                <div class="tempat-info">
+                    <h3>Riverside Cafe</h3>
+                    <div class="rating">⭐⭐⭐⭐ 4.5</div>
+                    <div class="harga">💰 Rp40.000 - Rp90.000</div>
+                    <div class="fasilitas-icons">
+                        <span title="Outdoor"><i class="fas fa-tree"></i></span>
+                        <span title="WiFi"><i class="fas fa-wifi"></i></span>
+                        <span title="Live Music"><i class="fas fa-music"></i></span>
+                    </div>
+                    <div class="tempat-actions">
+                        <a href="detail.html" class="btn-detail">Lihat Detail</a>
+                        <button class="btn-maps"><i class="fas fa-map-marker-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Outdoor 3 -->
+            <div class="tempat-item">
+                <div class="tempat-image">
+                    <img src="assets/images/tempat/outdoor3.jpg" alt="Sky Lounge">
+                    <span class="kategori-badge">Outdoor</span>
+                </div>
+                <div class="tempat-info">
+                    <h3>Sky Lounge</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐ 4.9</div>
+                    <div class="harga">💰 Rp100.000 - Rp250.000</div>
+                    <div class="fasilitas-icons">
+                        <span title="Outdoor"><i class="fas fa-tree"></i></span>
+                        <span title="Bar"><i class="fas fa-glass-martini-alt"></i></span>
+                        <span title="Fine Dining"><i class="fas fa-utensils"></i></span>
+                    </div>
+                    <div class="tempat-actions">
+                        <a href="detail.html" class="btn-detail">Lihat Detail</a>
+                        <button class="btn-maps"><i class="fas fa-map-marker-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Outdoor 4 -->
+            <div class="tempat-item">
+                <div class="tempat-image">
+                    <img src="assets/images/tempat/outdoor4.jpg" alt="Beach Club">
+                    <span class="kategori-badge">Outdoor</span>
+                </div>
+                <div class="tempat-info">
+                    <h3>Beach Club</h3>
+                    <div class="rating">⭐⭐⭐⭐ 4.6</div>
+                    <div class="harga">💰 Rp80.000 - Rp200.000</div>
+                    <div class="fasilitas-icons">
+                        <span title="Outdoor"><i class="fas fa-tree"></i></span>
+                        <span title="Swimming Pool"><i class="fas fa-swimming-pool"></i></span>
+                        <span title="Restaurant"><i class="fas fa-utensils"></i></span>
+                    </div>
+                    <div class="tempat-actions">
+                        <a href="detail.html" class="btn-detail">Lihat Detail</a>
+                        <button class="btn-maps"><i class="fas fa-map-marker-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Outdoor 5 -->
+            <div class="tempat-item">
+                <div class="tempat-image">
+                    <img src="assets/images/tempat/outdoor5.jpg" alt="Garden Bistro">
+                    <span class="kategori-badge">Outdoor</span>
+                </div>
+                <div class="tempat-info">
+                    <h3>Garden Bistro</h3>
+                    <div class="rating">⭐⭐⭐⭐ 4.4</div>
+                    <div class="harga">💰 Rp60.000 - Rp150.000</div>
+                    <div class="fasilitas-icons">
+                        <span title="Outdoor"><i class="fas fa-tree"></i></span>
+                        <span title="WiFi"><i class="fas fa-wifi"></i></span>
+                        <span title="Pet Friendly"><i class="fas fa-paw"></i></span>
+                    </div>
+                    <div class="tempat-actions">
+                        <a href="detail.html" class="btn-detail">Lihat Detail</a>
+                        <button class="btn-maps"><i class="fas fa-map-marker-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tambahkan tempat lainnya dengan format yang sama -->
+        </div>
+    </section>
+
+    <!-- Virtual Agent -->
+    <div class="virtual-agent">
+        <div class="agent-icon">
+            <img src="assets/images/agent-icon.png" alt="Virtual Assistant">
+            <div class="agent-status online"></div>
+        </div>
+        <div class="agent-chat">
+            <div class="chat-header">
+                <h3>Asisten Virtual</h3>
+                <div class="chat-controls">
+                    <button class="btn-audio" title="Toggle Audio">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                    <button class="btn-close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="chat-messages"></div>
+            <div class="chat-input">
+                <input type="text" placeholder="Tanya sesuatu...">
+                <button class="btn-send">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h4>Tautan Cepat</h4>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="rekomendasi.html">Kategori</a></li>
+                    <li><a href="filter.html">Filter</a></li>
+                    <li><a href="tentang.html">Tentang Kami</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <h4>Ikuti Kami</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 HangOut Finder. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/agent.js"></script>
+    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+</body>
+</html>

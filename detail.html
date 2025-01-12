@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Tempat - HangOut Finder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/detail.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="HangOut Finder Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="rekomendasi.html">Kategori</a></li>
+                <li><a href="filter.html">Filter</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Detail Section -->
+    <section class="detail-section">
+        <div class="detail-container">
+            <!-- Gallery -->
+            <div class="tempat-gallery">
+                <div class="main-image">
+                    <img src="assets/images/tempat/kafe1.jpg" alt="Kopi Kenangan Masa" id="mainImage">
+                </div>
+                <div class="thumbnail-images">
+                    <div class="thumbnail-item" onclick="changeImage('assets/images/tempat/kafe1.jpg')">
+                        <img src="assets/images/tempat/kafe1.jpg" alt="Interior">
+                    </div>
+                    <div class="thumbnail-item" onclick="changeImage('assets/images/tempat/kafe1-2.jpg')">
+                        <img src="assets/images/tempat/kafe1-2.jpg" alt="Menu">
+                    </div>
+                    <div class="thumbnail-item" onclick="changeImage('assets/images/tempat/kafe1-3.jpg')">
+                        <img src="assets/images/tempat/kafe1-3.jpg" alt="Outdoor">
+                    </div>
+                    <div class="thumbnail-item" onclick="changeImage('assets/images/tempat/kafe1-4.jpg')">
+                        <img src="assets/images/tempat/kafe1-4.jpg" alt="Extra">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info Section -->
+            <div class="tempat-info">
+                <div class="info-header">
+                    <h1>Kopi Kenangan Masa</h1>
+                    <span class="kategori-badge">Kafe</span>
+                </div>
+
+                <div class="rating-review">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.7</span>
+                    </div>
+                    <span class="review-count">(120 ulasan)</span>
+                </div>
+
+                <div class="price-range">
+                    <i class="fas fa-coins"></i>
+                    <span>Rp30.000 - Rp70.000</span>
+                </div>
+
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Jl. Hangout No. 123, Padang</span>
+                    <a href="#" class="btn-maps">Lihat di Maps</a>
+                </div>
+
+                <div class="schedule">
+                    <h3>Jam Operasional</h3>
+                    <div class="schedule-grid">
+                        <div class="day">Senin - Jumat</div>
+                        <div class="time">08:00 - 22:00</div>
+                        <div class="day">Sabtu - Minggu</div>
+                        <div class="time">10:00 - 23:00</div>
+                    </div>
+                </div>
+
+                <div class="facilities">
+                    <h3>Fasilitas</h3>
+                    <div class="facility-icons">
+                        <span title="WiFi"><i class="fas fa-wifi"></i> WiFi</span>
+                        <span title="Colokan Listrik"><i class="fas fa-plug"></i> Power Outlet</span>
+                        <span title="AC"><i class="fas fa-snowflake"></i> AC</span>
+                        <span title="Parkir"><i class="fas fa-parking"></i> Parkir</span>
+                        <span title="Smoking Area"><i class="fas fa-smoking"></i> Smoking Area</span>
+                    </div>
+                </div>
+
+                <div class="description">
+                    <h3>Deskripsi</h3>
+                    <p>Kopi Kenangan Masa adalah kafe yang menyajikan berbagai jenis kopi dengan suasana nyaman dan cozy. Cocok untuk tempat kerja, meeting, atau sekedar nongkrong bersama teman.</p>
+                </div>
+
+                <div class="menu-highlights">
+                    <h3>Menu Unggulan</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <img src="assets/images/tempat/menu1.jpg" alt="Signature Coffee">
+                            <div class="menu-info">
+                                <h4>Signature Coffee</h4>
+                                <span class="price">Rp35.000</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="assets/images/tempat/menu2.jpg" alt="Pasta Carbonara">
+                            <div class="menu-info">
+                                <h4>Pasta Carbonara</h4>
+                                <span class="price">Rp45.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews">
+                    <h3>Ulasan Terbaru</h3>
+                    <div class="review-list">
+                        <div class="review-item">
+                            <div class="reviewer">
+                                <img src="assets/images/user1.jpg" alt="User">
+                                <div class="reviewer-info">
+                                    <h4>John Doe</h4>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-text">Tempat yang sangat nyaman untuk kerja. WiFi cepat dan banyak colokan. Kopinya enak!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Controls -->
+    <div class="audio-controls">
+        <div class="volume-control">
+            <i class="fas fa-volume-up volume-icon"></i>
+            <input type="range" id="volumeSlider" min="0" max="100" value="20">
+            <span class="volume-value">20%</span>
+        </div>
+        <button class="btn-music" title="Toggle Background Music">
+            <i class="fas fa-music"></i>
+        </button>
+    </div>
+
+    <!-- Audio Elements -->
+    <div class="audio-elements">
+        <audio id="bgMusic" loop>
+            <source src="assets/audio/bgm.mp3" type="audio/mp3">
+        </audio>
+        <audio id="buttonSound">
+            <source src="assets/audio/button-click.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        function changeImage(src) {
+            document.getElementById('mainImage').src = src;
+            audioManager.playButtonSound();
+        }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,49 @@
+HangOutFinder/
+├── index.html
+├── rekomendasi.html
+├── detail.html
+├── filter.html
+├── tentang.html
+├── assets/
+│   ├── css/
+│   │   ├── style.css
+│   │   ├── detail.css
+│   │   └── filter.css
+│   ├── js/
+│   │   ├── script.js
+│   │   └── agent.js
+│   ├── images/
+│   │   ├── logo.png
+│   │   ├── agent-icon.png
+│   │   ├── pattern.svg
+│   │   ├── kategori/
+│   │   │   ├── kafe.png
+│   │   │   ├── taman.png
+│   │   │   └── coworking.png
+│   │   ├── tempat/
+│   │   │   ├── kafe1.jpg
+│   │   │   ├── kafe1-2.jpg
+│   │   │   ├── kafe1-3.jpg
+│   │   │   ├── kafe1-4.jpg
+│   │   │   ├── menu1.jpg
+│   │   │   ├── menu2.jpg
+│   │   │   ├── coworking1.jpg
+│   │   │   ├── coworking2.jpg
+│   │   │   ├── coworking3.jpg
+│   │   │   ├── taman1.jpg
+│   │   │   ├── outdoor1.jpg
+│   │   │   └── outdoor2.jpg
+│   │   ├── users/
+│   │   │   └── user1.jpg
+│   │   └── tim/
+│   │       └── member1.jpg
+│   └── audio/
+│       ├── bgm.mp3
+│       ├── button-click.mp3
+│       ├── notifikasi.mp3
+│       ├── welcome.mp3
+│       ├── open.mp3
+│       ├── close.mp3
+│       ├── message.mp3
+│       └── hafi-message.mp3
+└── README.md
